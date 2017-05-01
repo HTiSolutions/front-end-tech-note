@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="page">
+<head>
+    <object th:include="this :: head" th:remove="tag"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+    <style>
+      body {
+        padding-top: 70px;
+     }
+
+     .jumbotron{
+       background: pink;
+     }
+
+    </style>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div th:include="fragments/navbar :: navbar">
+    Navigation bar
+</div>
+<div class="container">
+    <div th:include="this :: content">
+        Page content
+    </div>
+</div>
+
+<div th:include="fragments/footer :: footer">
+    Footer
+</div>
+</body>
+</html>

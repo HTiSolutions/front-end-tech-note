@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:include = "layout :: page">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+
+    <title>Bootstrap Tutorial</title>
+
+</head>
+<body th:fragment="content">
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>I wanna be the very best,
+            Like no one ever was.
+            To catch them is my real test,
+            To train them is my cause.
+
+            I will travel across the land,
+            Searching far and wide.
+            Teach Pokemon to understand,
+            The power that's inside.
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="page-header">
+        <h1 align="centre">Sign Up!<small> &nbsp;&nbsp;&nbsp; It's free and always will be</small></h1>
+    </div>
+
+    <form class="form col-md-12 center-block">
+
+        <div class="row">
+            <div class="col-xs-offset-3 col-sm-3 col-md-3">
+                <div class="form-group">
+                    <input name="first-name" type="text" class="form-control input-lg" placeholder="First Name" required="required"/>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="form-group">
+                    <input name="last-name" type="text" class="form-control input-lg" placeholder="Surname" required="required"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-3 col-sm-6 col-md-6">
+                <div class="form-group ">
+                    <input name="register-nickname" type="text" class="form-control input-lg" placeholder="Email-address" required="required"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-3 col-sm-3 col-md-3">
+                <div class="form-group">
+                    <input name="register-password" type="password" class="form-control input-lg" placeholder="Password" required="required"/>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="form-group">
+                    <input name="confirm-password" type="password" class="form-control input-lg" placeholder="Confirm Password" required="required"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-3 col-sm-6 col-md-6">
+                <div class="form-group">
+                    <button class="btn btn-success btn-lg btn-block">Register</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
